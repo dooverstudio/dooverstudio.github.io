@@ -1,19 +1,54 @@
-<!-- PLACEHOLDER: swap this file for a real screenshot of the restaurant demo site -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
-  <title id="title">Placeholder restaurant website preview</title>
-  <desc id="desc">Mock browser window with a stand-in layout representing a redesigned restaurant website</desc>
+<!-- Fictional example concept — "The Corner Table" is not a real client. Replace with a real screenshot once available. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">Example restaurant website design</title>
+  <desc id="desc">Mockup of a redesigned restaurant website for a fictional business called The Corner Table, showing a hero section with a reservation call to action and a row of menu highlights</desc>
+
   <rect width="600" height="420" fill="#1B1F4B"/>
-  <rect x="0" y="0" width="600" height="34" fill="#12153B"/>
-  <circle cx="20" cy="17" r="5" fill="#00E5FF" opacity="0.5"/>
-  <circle cx="38" cy="17" r="5" fill="#00E5FF" opacity="0.35"/>
-  <circle cx="56" cy="17" r="5" fill="#00E5FF" opacity="0.2"/>
-  <rect x="40" y="60" width="230" height="26" rx="4" fill="#F1F3FF" opacity="0.9"/>
-  <rect x="40" y="100" width="330" height="14" rx="3" fill="#9BA3D4"/>
-  <rect x="40" y="122" width="260" height="14" rx="3" fill="#9BA3D4"/>
-  <rect x="40" y="160" width="140" height="42" rx="21" fill="#00E5FF"/>
-  <rect x="330" y="60" width="230" height="150" rx="8" fill="#262B63"/>
-  <rect x="40" y="240" width="160" height="130" rx="8" fill="#262B63"/>
-  <rect x="220" y="240" width="160" height="130" rx="8" fill="#262B63"/>
-  <rect x="400" y="240" width="160" height="130" rx="8" fill="#262B63"/>
-  <text x="300" y="410" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9BA3D4">PLACEHOLDER — restaurant demo screenshot goes here</text>
+
+  <!-- browser chrome -->
+  <rect x="0" y="0" width="600" height="30" fill="#12153B"/>
+  <circle cx="18" cy="15" r="4.5" fill="#00E5FF" opacity="0.5"/>
+  <circle cx="34" cy="15" r="4.5" fill="#00E5FF" opacity="0.35"/>
+  <circle cx="50" cy="15" r="4.5" fill="#00E5FF" opacity="0.2"/>
+
+  <!-- site nav -->
+  <rect x="0" y="30" width="600" height="38" fill="#262B63"/>
+  <text x="20" y="54" font-size="16" font-weight="700" fill="#F1F3FF">The Corner Table</text>
+  <text x="368" y="53" font-size="11" fill="#9BA3D4">Menu</text>
+  <text x="418" y="53" font-size="11" fill="#9BA3D4">Reservations</text>
+  <text x="510" y="53" font-size="11" fill="#9BA3D4">Contact</text>
+
+  <!-- hero -->
+  <rect x="20" y="86" width="560" height="150" rx="8" fill="#262B63"/>
+  <text x="42" y="136" font-size="24" font-weight="700" fill="#F1F3FF">Wood-fired.</text>
+  <text x="42" y="164" font-size="24" font-weight="700" fill="#F1F3FF">Family-owned.</text>
+  <text x="42" y="188" font-size="12.5" fill="#9BA3D4">Now taking reservations for the heated patio.</text>
+  <rect x="42" y="200" width="150" height="30" rx="15" fill="#00E5FF"/>
+  <text x="117" y="220" font-size="11.5" font-weight="700" fill="#12153B" text-anchor="middle">Reserve a Table</text>
+
+  <!-- menu highlight cards -->
+  <rect x="20" y="252" width="172" height="98" rx="8" fill="#262B63"/>
+  <rect x="204" y="252" width="172" height="98" rx="8" fill="#262B63"/>
+  <rect x="388" y="252" width="192" height="98" rx="8" fill="#262B63"/>
+
+  <circle cx="46" cy="280" r="10" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <path d="M40 280 L52 280 M46 274 L46 286" stroke="#00E5FF" stroke-width="2" stroke-linecap="round"/>
+  <text x="66" y="284" font-size="12.5" font-weight="700" fill="#F1F3FF">Lunch Specials</text>
+  <text x="36" y="306" font-size="10.5" fill="#9BA3D4">Weekdays, 11-2</text>
+  <text x="36" y="322" font-size="10.5" fill="#9BA3D4">Starting at $12</text>
+
+  <circle cx="230" cy="280" r="10" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <path d="M225 285 L235 275 M225 275 L235 285" stroke="#00E5FF" stroke-width="2" stroke-linecap="round"/>
+  <text x="250" y="284" font-size="12.5" font-weight="700" fill="#F1F3FF">Dinner Menu</text>
+  <text x="220" y="306" font-size="10.5" fill="#9BA3D4">Wood-fired mains</text>
+  <text x="220" y="322" font-size="10.5" fill="#9BA3D4">Nightly from 5pm</text>
+
+  <circle cx="414" cy="280" r="10" fill="none" stroke="#00E5FF" stroke-width="2"/>
+  <rect x="409" y="275" width="10" height="10" fill="none" stroke="#00E5FF" stroke-width="1.6"/>
+  <text x="434" y="284" font-size="12.5" font-weight="700" fill="#F1F3FF">Private Events</text>
+  <text x="404" y="306" font-size="10.5" fill="#9BA3D4">Book our back room</text>
+  <text x="404" y="322" font-size="10.5" fill="#9BA3D4">Parties up to 30</text>
+
+  <text x="20" y="380" font-size="11" fill="#9BA3D4">Open Tue-Sun - 11am-9pm - 214 Main St, Indianapolis</text>
+  <text x="580" y="404" font-size="9.5" fill="#6B72A6" text-anchor="end" font-style="italic">Example concept - fictional business</text>
 </svg>
