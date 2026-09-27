@@ -1,0 +1,19 @@
+<!-- PLACEHOLDER: swap this file for a real screenshot of the restaurant demo site -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder restaurant website preview</title>
+  <desc id="desc">Mock browser window with a stand-in layout representing a redesigned restaurant website</desc>
+  <rect width="600" height="420" fill="#1B1F4B"/>
+  <rect x="0" y="0" width="600" height="34" fill="#12153B"/>
+  <circle cx="20" cy="17" r="5" fill="#00E5FF" opacity="0.5"/>
+  <circle cx="38" cy="17" r="5" fill="#00E5FF" opacity="0.35"/>
+  <circle cx="56" cy="17" r="5" fill="#00E5FF" opacity="0.2"/>
+  <rect x="40" y="60" width="230" height="26" rx="4" fill="#F1F3FF" opacity="0.9"/>
+  <rect x="40" y="100" width="330" height="14" rx="3" fill="#9BA3D4"/>
+  <rect x="40" y="122" width="260" height="14" rx="3" fill="#9BA3D4"/>
+  <rect x="40" y="160" width="140" height="42" rx="21" fill="#00E5FF"/>
+  <rect x="330" y="60" width="230" height="150" rx="8" fill="#262B63"/>
+  <rect x="40" y="240" width="160" height="130" rx="8" fill="#262B63"/>
+  <rect x="220" y="240" width="160" height="130" rx="8" fill="#262B63"/>
+  <rect x="400" y="240" width="160" height="130" rx="8" fill="#262B63"/>
+  <text x="300" y="410" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9BA3D4">PLACEHOLDER — restaurant demo screenshot goes here</text>
+</svg>

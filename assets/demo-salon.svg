@@ -1,0 +1,17 @@
+<!-- PLACEHOLDER: swap this file for a real screenshot of the salon demo site -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder salon website preview</title>
+  <desc id="desc">Mock browser window with a stand-in layout representing a redesigned salon website</desc>
+  <rect width="600" height="420" fill="#1B1F4B"/>
+  <rect x="0" y="0" width="600" height="34" fill="#12153B"/>
+  <circle cx="20" cy="17" r="5" fill="#00E5FF" opacity="0.5"/>
+  <circle cx="38" cy="17" r="5" fill="#00E5FF" opacity="0.35"/>
+  <circle cx="56" cy="17" r="5" fill="#00E5FF" opacity="0.2"/>
+  <circle cx="300" cy="140" r="70" fill="#262B63"/>
+  <rect x="180" y="230" width="240" height="24" rx="4" fill="#F1F3FF" opacity="0.9"/>
+  <rect x="220" y="266" width="160" height="34" rx="17" fill="#00E5FF"/>
+  <rect x="60" y="330" width="150" height="14" rx="3" fill="#9BA3D4"/>
+  <rect x="225" y="330" width="150" height="14" rx="3" fill="#9BA3D4"/>
+  <rect x="390" y="330" width="150" height="14" rx="3" fill="#9BA3D4"/>
+  <text x="300" y="410" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9BA3D4">PLACEHOLDER — salon demo screenshot goes here</text>
+</svg>

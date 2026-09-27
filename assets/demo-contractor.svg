@@ -1,0 +1,19 @@
+<!-- PLACEHOLDER: swap this file for a real screenshot of the contractor demo site -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder contractor website preview</title>
+  <desc id="desc">Mock browser window with a stand-in layout representing a redesigned contractor website</desc>
+  <rect width="600" height="420" fill="#1B1F4B"/>
+  <rect x="0" y="0" width="600" height="34" fill="#12153B"/>
+  <circle cx="20" cy="17" r="5" fill="#00E5FF" opacity="0.5"/>
+  <circle cx="38" cy="17" r="5" fill="#00E5FF" opacity="0.35"/>
+  <circle cx="56" cy="17" r="5" fill="#00E5FF" opacity="0.2"/>
+  <rect x="0" y="34" width="600" height="140" fill="#262B63"/>
+  <rect x="40" y="70" width="260" height="26" rx="4" fill="#F1F3FF" opacity="0.9"/>
+  <rect x="40" y="108" width="180" height="34" rx="17" fill="#00E5FF"/>
+  <rect x="40" y="200" width="160" height="100" rx="8" fill="#262B63"/>
+  <rect x="220" y="200" width="160" height="100" rx="8" fill="#262B63"/>
+  <rect x="400" y="200" width="160" height="100" rx="8" fill="#262B63"/>
+  <rect x="40" y="330" width="520" height="14" rx="3" fill="#9BA3D4"/>
+  <rect x="40" y="352" width="420" height="14" rx="3" fill="#9BA3D4"/>
+  <text x="300" y="410" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9BA3D4">PLACEHOLDER — contractor demo screenshot goes here</text>
+</svg>
