@@ -1,5 +1,5 @@
 // Do-Over Studio — site scripts
-// Mobile nav toggle, footer year, and the quote form's mailto submission.
+// Mobile nav toggle, footer year, and the quote form's Formspree submission.
 
 (function () {
   "use strict";
@@ -29,7 +29,10 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
-  /* ---------- Quote form -> mailto ---------- */
+  /* ---------- Quote form -> Formspree ---------- */
+  // 1. Create a free form at https://formspree.io (50 submissions/month free).
+  // 2. Paste the form ID below, replacing YOUR_FORM_ID. Redeploy the site.
+  var FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
   var QUOTE_EMAIL = "theofficialdooverstudio@gmail.com";
   var form = document.getElementById("quote-form");
   var status = document.getElementById("form-status");
@@ -51,31 +54,48 @@
         return;
       }
 
-      var subject = "Free quote request — " + business;
-
-      var bodyLines = [
-        "Name: " + name,
-        "Business name: " + business,
-        "Current website: " + (currentUrl || "N/A"),
-        "Email: " + email,
-        "",
-        "What they want changed:",
-        details
-      ];
-
-      var mailtoUrl =
-        "mailto:" +
-        encodeURIComponent(QUOTE_EMAIL) +
-        "?subject=" +
-        encodeURIComponent(subject) +
-        "&body=" +
-        encodeURIComponent(bodyLines.join("\n"));
-
-      window.location.href = mailtoUrl;
+      if (FORMSPREE_ENDPOINT.indexOf("YOUR_FORM_ID") !== -1) {
+        if (status) {
+          status.textContent =
+            "The form isn't connected yet — email us directly at " + QUOTE_EMAIL + " and we'll get you sorted.";
+        }
+        return;
+      }
 
       if (status) {
-        status.textContent = "Opening your email app… if nothing happens, email us directly at " + QUOTE_EMAIL;
+        status.textContent = "Sending…";
       }
+
+      fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: name,
+          business: business,
+          "current website": currentUrl || "N/A",
+          email: email,
+          details: details,
+          _subject: "Free audit request — " + business,
+          _gotcha: form.elements["_gotcha"] ? form.elements["_gotcha"].value : ""
+        })
+      }).then(function (response) {
+        if (response.ok) {
+          if (status) {
+            status.textContent = "Thanks! Your audit request is in — we'll reply within one business day.";
+          }
+          form.reset();
+        } else {
+          if (status) {
+            status.textContent =
+              "Something went wrong sending that. Email us directly at " + QUOTE_EMAIL + " instead.";
+          }
+        }
+      }).catch(function () {
+        if (status) {
+          status.textContent =
+            "Something went wrong sending that. Email us directly at " + QUOTE_EMAIL + " instead.";
+        }
+      });
     });
   }
 })();

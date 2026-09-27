@@ -4,12 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Do-Over Studio — Website redesigns for small businesses in Indianapolis</title>
-  <meta name="description" content="Do-Over Studio redesigns outdated small-business websites for restaurants, contractors, and salons. Give your website a do-over." />
+  <meta name="description" content="Do-Over Studio is an Indianapolis web design studio redesigning outdated small-business websites for local restaurants, contractors, and salons. Give your website a do-over." />
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Do-Over Studio",
+    "slogan": "Give your website a do-over.",
+    "description": "Website redesigns and new website builds for small businesses in Indianapolis, Indiana.",
+    "url": "https://dooverstudio.github.io",
+    "email": "theofficialdooverstudio@gmail.com",
+    "areaServed": { "@type": "City", "name": "Indianapolis" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Indianapolis", "addressRegion": "IN", "addressCountry": "US" },
+    "priceRange": "$400 - $1,800+"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -31,7 +45,7 @@
         </ul>
       </nav>
 
-      <a class="btn btn-primary nav-cta" href="#contact">Get a free quote</a>
+      <a class="btn btn-primary nav-cta" href="#contact">Get a free audit</a>
 
       <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
         <span class="sr-only">Menu</span>
@@ -45,14 +59,15 @@
     <section class="hero" id="top">
       <div class="wrap">
         <div class="hero-copy">
-          <span class="hero-eyebrow">Website redesigns for local businesses</span>
+          <span class="hero-eyebrow">Website redesigns for Indianapolis businesses</span>
           <h1>Your website called. It wants a do-over.</h1>
           <p class="hero-sub">
             We take tired, outdated small-business sites and turn them into ones customers actually trust —
             without the jargon, the six-week runaround, or the agency price tag.
+            Start with a free audit: we'll tear down your current site and show you exactly what's costing you customers.
           </p>
           <div class="hero-ctas">
-            <a class="btn btn-primary" href="#contact">Get a free quote</a>
+            <a class="btn btn-primary" href="#contact">Get my free audit</a>
             <a class="btn btn-ghost" href="#demos">See the difference</a>
           </div>
         </div>
@@ -69,7 +84,7 @@
               <div class="old-line"></div>
               <div class="old-line short"></div>
               <div class="old-line"></div>
-              <span class="old-badge">UNDER CONSTRUCTION</span>
+              <span class="old-badge">BEST VIEWED IN INTERNET EXPLORER</span>
             </div>
           </div>
 
@@ -325,10 +340,10 @@
     <section class="section section-alt" id="contact">
       <div class="wrap contact-grid">
         <div class="contact-info">
-          <h2>Ready for a do-over?</h2>
+          <h2>Get your free website audit</h2>
           <p>
-            Fill out the form and we'll get back to you with a free audit of your current site
-            (or a quick chat if you're starting from zero). No pressure, no obligation.
+            Drop your URL below and we'll send back a plain-English teardown of what's holding your site back —
+            plus a quote for the full do-over if you want it. No pressure, no obligation.
           </p>
           <a class="contact-email" href="mailto:theofficialdooverstudio@gmail.com">
             theofficialdooverstudio@gmail.com
@@ -361,9 +376,10 @@
             <input type="email" id="field-email" name="email" autocomplete="email" required />
           </div>
 
-          <p class="form-note">Submitting opens your email app with everything filled in and ready to send to us.</p>
+          <p class="form-note">We reply to every audit request within one business day.</p>
 
-          <button class="btn btn-primary btn-block" type="submit">Get a free quote</button>
+          <button class="btn btn-primary btn-block" type="submit">Get my free audit</button>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
