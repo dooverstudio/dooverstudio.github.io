@@ -32,7 +32,7 @@
   /* ---------- Quote form -> Formspree ---------- */
   // 1. Create a free form at https://formspree.io (50 submissions/month free).
   // 2. Paste the form ID below, replacing YOUR_FORM_ID. Redeploy the site.
-  var FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+  var FORMSPREE_ENDPOINT = "https://formspree.io/f/mbglpbje";
   var QUOTE_EMAIL = "theofficialdooverstudio@gmail.com";
   var form = document.getElementById("quote-form");
   var status = document.getElementById("form-status");
