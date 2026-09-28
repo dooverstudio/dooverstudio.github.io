@@ -787,6 +787,71 @@ button {
   font-size: 0.95rem;
 }
 
+/* ---------- Maintenance plan strip ---------- */
+.care-plan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 28px 30px;
+  border-radius: var(--radius-card);
+  border: 1px dashed var(--cyan);
+  background: var(--navy-950);
+}
+
+.care-plan h3 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.care-plan .price-note-top {
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.care-plan ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.care-plan li {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  padding-left: 22px;
+  position: relative;
+}
+
+.care-plan li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background: var(--cyan);
+  border-radius: 3px;
+}
+
+.care-plan-cta {
+  text-align: right;
+}
+
+.care-trial {
+  color: var(--cyan);
+  font-size: 0.9rem;
+  margin: 4px 0 16px;
+}
+
+@media (max-width: 640px) {
+  .care-plan-cta {
+    text-align: left;
+  }
+}
+
 /* ---------- Testimonials ---------- */
 .testimonial-grid {
   display: grid;
