@@ -10,6 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google tag (gtag.js) — GA4 click + visit analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ5P0KQ695"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WJ5P0KQ695');
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -374,6 +382,11 @@
           <div class="form-row">
             <label for="field-email">Your email</label>
             <input type="email" id="field-email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="field-referral">How did you hear about us? (optional)</label>
+            <input type="text" id="field-referral" name="referral" placeholder="e.g. Google, a friend, Nextdoor…" autocomplete="off" />
           </div>
 
           <p class="form-note">We reply to every audit request within one business day.</p>

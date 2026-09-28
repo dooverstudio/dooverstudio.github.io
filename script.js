@@ -46,6 +46,7 @@
       var currentUrl = form.elements["currentUrl"].value.trim();
       var details = form.elements["details"].value.trim();
       var email = form.elements["email"].value.trim();
+      var referral = form.elements["referral"] ? form.elements["referral"].value.trim() : "";
 
       if (!name || !business || !details || !email) {
         if (status) {
@@ -75,6 +76,7 @@
           "current website": currentUrl || "N/A",
           email: email,
           details: details,
+          "how they heard about us": referral || "N/A",
           _subject: "Free audit request — " + business,
           _gotcha: form.elements["_gotcha"] ? form.elements["_gotcha"].value : ""
         })
@@ -82,6 +84,13 @@
         if (response.ok) {
           if (status) {
             status.textContent = "Thanks! Your audit request is in — we'll reply within one business day.";
+          }
+          // Analytics: count this as a lead (safe to call before the tag is installed).
+          if (typeof gtag === "function") {
+            gtag("event", "generate_lead", {
+              event_category: "engagement",
+              event_label: referral || "not specified"
+            });
           }
           form.reset();
         } else {
