@@ -325,29 +325,9 @@
           <div class="care-plan-cta">
             <p class="price-amount">$59<span>/month</span></p>
             <p class="care-trial">First month free for our website clients</p>
-            <div id="paypal-button-container-P-1U5496602T608060DNK45NXA"></div>
+            <a class="btn btn-primary" href="#contact">Ask about maintenance</a>
           </div>
         </div>
-        <script src="https://www.paypal.com/sdk/js?client-id=BAAkO4FBarGSHe2517kaJVUghrJ2QFo571FU2YR8ERWHHktbJ5yUphdJwdq22FrIWNIJQdMW_H4L7mFQ0Y&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-        <script>
-          paypal.Buttons({
-              style: {
-                  shape: 'rect',
-                  color: 'gold',
-                  layout: 'vertical',
-                  label: 'subscribe'
-              },
-              createSubscription: function(data, actions) {
-                return actions.subscription.create({
-                  /* Creates the subscription */
-                  plan_id: 'P-1U5496602T608060DNK45NXA'
-                });
-              },
-              onApprove: function(data, actions) {
-                alert('You are subscribed to Keep It Fresh — welcome aboard! Your first month is free.');
-              }
-          }).render('#paypal-button-container-P-1U5496602T608060DNK45NXA'); // Renders the PayPal button
-        </script>
 
         <p class="pricing-footnote">Every project gets a custom quote based on what you actually need — these are just starting points. Domain name and any paid services (like hosting) are billed separately at cost, and I'll help you get them set up.</p>
       </div>
