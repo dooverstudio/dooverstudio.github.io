@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dooverstudio.github.io/sitemap.xml
